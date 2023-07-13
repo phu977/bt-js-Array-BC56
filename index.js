@@ -4,7 +4,7 @@ function inputnumberarray() {
   arrNumber.push(number);
   document.querySelector("#input_number").value = "";
   document.getElementById("result").innerHTML = `
-  <p class=' mt-5'>👉 ${arrNumber}</p>
+  <p class=' mt-5 py-5'>👉 ${arrNumber}</p>
   `;
 }
 // bài 1 
@@ -14,7 +14,7 @@ document.querySelector("#btn-sum").onclick = function () {
     sum += arrNumber[index];
   }
   document.getElementById("result1").innerHTML = `
-  <p class=' mt-5'>Tổng các số : ${sum}</p>
+  <p class=' mt-5 py-5'>👉Tổng các số : ${sum}</p>
   `;
 };
 // bài 2
@@ -26,7 +26,7 @@ document.querySelector("#btn-count").onclick = function () {
     }
   }
   document.getElementById("result2").innerHTML = `
-  <p class='mt-5'>số lượng số nguyên: ${count}</p>
+  <p class='mt-5 py-5'>👉số lượng số nguyên: ${count}</p>
   `;
 };
 
@@ -41,7 +41,7 @@ document.querySelector("#btn-min").onclick = function () {
     }
   }
   document.getElementById("result3").innerHTML = `
-  <p class=' mt-5'>số nhỏ nhất: ${number}</p>
+  <p class=' mt-5 py-5'>👉số nhỏ nhất: ${number}</p>
   `;
 };
 
@@ -62,12 +62,12 @@ document.querySelector("#btn-positiveintegersmin").onclick = function () {
       }
     }
     document.getElementById("result4").innerHTML = `
-    <p class=' mt-5'>số nhỏ nhất: ${positive}</p>
+    <p class=' mt-5 py-5'>👉số nhỏ nhất: ${positive}</p>
     `;
   } else {
     kiemtramang = "Không có số dương trong mảng";
     document.getElementById("result4").innerHTML = `
-    <p class=' mt-5'>${kiemtramang}</p>
+    <p class=' mt-5 py-5'>👉${kiemtramang}</p>
     `;
   }
 };
@@ -83,11 +83,11 @@ document.querySelector("#btn-sochan").onclick = function () {
   }
   if (sochancuoicung !== null) {
     document.getElementById("result5").innerHTML = `
-    <p class=' mt-5'>số chẵn cuối cùng :${sochancuoicung}</p>
+    <p class=' mt-5 py-5'>👉số chẵn cuối cùng :${sochancuoicung}</p>
     `;
   } else {
     document.getElementById("result5").innerHTML = `
-    <p class=' mt-5'> không tìm thấy số chẵn cuối cùng </p>
+    <p class=' mt-5 py-5'>👉 không tìm thấy số chẵn cuối cùng </p>
     `;
   }
 };
@@ -100,7 +100,7 @@ document.querySelector("#btn-doicho").onclick = function () {
   arrNumber[number1] = arrNumber[number2];
   arrNumber[number2] = temp;
   document.getElementById("result6").innerHTML = `
-  <p class=' mt-5'> mảng đổi chỗ ${arrNumber} </p>
+  <p class=' mt-5 py-5'>👉 mảng đổi chỗ ${arrNumber} </p>
   `;
 };
 
@@ -117,7 +117,7 @@ document.querySelector("#btn-sort").onclick = function () {
     arrNumber[j + 1] = current;
   }
   document.getElementById("result7").innerHTML = `
-  <p class=' mt-5'> Sắp xếp mảng ${arrNumber} </p>
+  <p class=' mt-5 py-5'>👉 Sắp xếp mảng ${arrNumber} </p>
   `;
 };
 
@@ -140,13 +140,13 @@ document.querySelector("#btn-prime").onclick = function () {
   for (var index = 0; index < arrNumber.length; index++) {
     if (checkPrime(arrNumber[index])) {
       document.getElementById("result8").innerHTML = `
-      <p class=' mt-5'> Số nguyên tố đầu tiên là${arrNumber[index]} </p>
+      <p class=' mt-5 py-5'>👉 Số nguyên tố đầu tiên là${arrNumber[index]} </p>
       `;
       return;
     }
   }
   document.getElementById("result8").innerHTML = `
-  <p class=' mt-5'> ${inspection} </p>
+  <p class=' mt-5 py-5'>👉 ${inspection} </p>
   `;
 };
 
@@ -157,7 +157,7 @@ function inputnumbernewarray() {
   arrNewNumber.push(number);
   document.querySelector("#input_number2").value = "";
   document.getElementById("result_9").innerHTML = `
-  <p class=' mt-5'>👉 ${arrNewNumber}</p>
+  <p class=' mt-5 py-5'>👉 ${arrNewNumber}</p>
   `;
 }
 document.querySelector("#btn-integer").onclick = function () {
@@ -168,7 +168,7 @@ document.querySelector("#btn-integer").onclick = function () {
     }
   }
   document.getElementById("result9").innerHTML = `
-  <p class='mt-5'> ${count} </p>
+  <p class='mt-5 py-5'>👉 ${count} </p>
   `;
 }
 
@@ -185,11 +185,11 @@ document.querySelector('#btn-sosanh').onclick = function() {
   }
   if(countPositive > countNegative){
     document.getElementById("result10").innerHTML=`
-    <p class='mt-5'> Số dương > số âm </p>
+    <p class='mt-5 py-5'>👉 Số dương > số âm </p>
     `
   }else{
     document.getElementById("result10").innerHTML=`
-    <p class='mt-5'> Số dương < số âm </p>
+    <p class='mt-5 py-5'>👉 Số dương < số âm </p>
     `
   }
 }
